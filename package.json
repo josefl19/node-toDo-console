@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/josefl19/node-toDo-console/issues"
   },
-  "homepage": "https://github.com/josefl19/node-toDo-console#readme"
+  "homepage": "https://github.com/josefl19/node-toDo-console#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
