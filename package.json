@@ -1,0 +1,24 @@
+{
+  "name": "todo_console",
+  "version": "0.0.1",
+  "description": "\"Aplicacion de consola interactiva para el almacenamiento de tareas\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefl19/node-toDo-console.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "to_do"
+  ],
+  "author": "Jose Fujarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefl19/node-toDo-console/issues"
+  },
+  "homepage": "https://github.com/josefl19/node-toDo-console#readme"
+}
