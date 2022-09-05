@@ -1,6 +1,7 @@
 {
   "name": "todo_console",
   "version": "0.0.1",
+  "type": "module",
   "description": "\"Aplicacion de consola interactiva para el almacenamiento de tareas\"",
   "main": "app.js",
   "scripts": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/josefl19/node-toDo-console#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^9.1.1"
   }
 }
