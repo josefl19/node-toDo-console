@@ -17,12 +17,13 @@ const main = async () => {
             break;
             
             case '2':
-                console.log(tareas._listado);
+                console.log(tareas.listadoArr);
             break;
         
             default:
                 break;
         }
+        
         if (opt !== '0') await pausa();     // Si es 0 sale de la app sin mostrar el otro mensaje
     } while (opt !== '0');
 }
