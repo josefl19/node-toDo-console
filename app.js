@@ -23,8 +23,24 @@ const main = async () => {
             break;
             
             case '2':
+                console.log();
                 //console.log(tareas.listadoArr);
                 tareas.listadoCompleto();
+                console.log();
+            break;
+
+            case '3':
+                //console.log(tareas.listadoArr);
+                console.log();
+                tareas.listarPendientesCompletas();
+                console.log();
+            break;
+
+            case '4':
+                //console.log(tareas.listadoArr);
+                console.log();
+                tareas.listarPendientesCompletas(false);
+                console.log();
             break;
         
             default:
