@@ -1,6 +1,6 @@
 import colors from "colors";
 import { guardarBD, leerDB } from "./helpers/interaccionDB.js";
-import { inquirerMenu, pausa, leerInput, listadoTareasBorrar, confirmar } from './helpers/inquirer.js';
+import { inquirerMenu, pausa, leerInput, listadoTareasBorrar, confirmar, mostrarListadoChecklist } from './helpers/inquirer.js';
 import { Tarea } from "./models/tarea.js";
 import { Tareas } from "./models/tareas.js";
 
@@ -17,30 +17,32 @@ const main = async () => {
         opt = await inquirerMenu();
 
         switch (opt) {
-            case '1':
+            case '1': // Añadir nueva tarea
                 const desc = await leerInput('Descripcion:');
                 tareas.crearTarea(desc);
             break;
             
-            case '2':
+            case '2': // Listar todas las tareas
                 console.log();
-                //console.log(tareas.listadoArr);
                 tareas.listadoCompleto();
                 console.log();
             break;
 
-            case '3':
-                //console.log(tareas.listadoArr);
+            case '3': // Listar las tareas completadas
                 console.log();
                 tareas.listarPendientesCompletas();
                 console.log();
             break;
 
-            case '4':
-                //console.log(tareas.listadoArr);
+            case '4': // Listar las tareas pendientes
                 console.log();
                 tareas.listarPendientesCompletas(false);
                 console.log();
+            break;
+
+            case '5': // Completar | Pendiente
+                const ids = await mostrarListadoChecklist( tareas.listadoArr );
+                tareas.toggleCompletadas(ids);
             break;
 
             case '6':
